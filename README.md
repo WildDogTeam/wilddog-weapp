@@ -1,4 +1,6 @@
 # wilddog-weapp
+
+
 野狗(wilddog)微信小程序客户端 (preview)
 
 注意：
@@ -7,6 +9,10 @@
 已知问题:
 * 在微信开发者工具中会出现一定概率的不能连接野狗服务器现象
 * 目前只支持数据同步部分功能，auth和用户管理相关功能并没有做支持
+
+## 项目地址
+https://github.com/WildDogTeam/wilddog-weapp
+
 
 ## 引入野狗客户端
 
