@@ -42,7 +42,8 @@ var config = {
 wilddog.initializeApp(config)
 ```
 
-完整的API请参考 https://docs.wilddog.com/api/sync/web/api.html
+
+
 
 ## 微信小程序平台独有API
 
@@ -73,3 +74,6 @@ wilddog.auth().signInWeapp().then(function(user){
 })
 
 ```
+完整的API请参考 [Sync API](https://docs.wilddog.com/api/sync/web/api.html) 和 [Auth API](https://docs.wilddog.com/api/auth/web/Auth.html)
+
+更多信息请移步[野狗官方文档](https://docs.wilddog.com)
