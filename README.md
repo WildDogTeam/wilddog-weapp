@@ -22,12 +22,13 @@
 
 1. 将wilddog-weapp-all.js 直接放到微信小程序的项目中
 2. 使用commonjs引入
-```
+
+```js
 var wilddog = require('wilddog-weapp-all')
 ```
 3. 初始化
 
-```
+```js
 var config = {
     syncURL: 'https://<WD-APPID>.wilddogio.com',
     authDomain: '<WD-APPID.wilddog.com>'
