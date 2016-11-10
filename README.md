@@ -10,7 +10,7 @@
 
 首先，如果想使用野狗数据同步功能和登陆认证的功能你需要在微信小程序管理后台配置域名白名单。路径是 设置>开发设置>服务器配置。由于微信给开发者设置了很多限制，每月只能修改3次，所以修改的时候一定要慎重。为了简化配置，你自需要增加2个域名到白名单：
 
-* socket合法域名 `wss://sdalwx-nss-1.wilddogio.com`
+* socket合法域名 `wss://s-dalwx-nss-1.wilddogio.com`
 * request合法域名 `https://auth.wilddog.com`
 
 #### 配置AppId和AppSecret
