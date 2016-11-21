@@ -71,3 +71,5 @@ wilddog.auth().signInWeapp().then(function(user){
 完整的API请参考 [Sync API](https://docs.wilddog.com/api/sync/web/api.html) 和 [Auth API](https://docs.wilddog.com/api/auth/web/Auth.html)
 
 更多信息请移步[野狗官方文档](https://docs.wilddog.com)
+
+如果遇到问题或有余力解答别人的问题可以到[野狗开发者社区](https://forum.wilddog.com) **注意：现在正在小规模测试**
