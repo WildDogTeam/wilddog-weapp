@@ -52,7 +52,7 @@ return Promise 对象
 ```js
 var config = {
     syncURL: 'https://<WD-APPID>.wilddogio.com',
-    authDomain: '<WD-APPID.wilddog.com>'
+    authDomain: '<WD-APPID>.wilddog.com'
 }
 wilddog.initializeApp(config)
 wilddog.auth().signInWeapp(function(err,user){
