@@ -142,7 +142,7 @@ index.wxml
 ]
 ```
 
-#### sync.bindAsObject(page,varName)
+#### ref.bindAsObject(page,varName)
 
 与bindAsArray 类似，不过是绑定到一个Object，而不是Array。
 bindAsObject 可以很方便的展示结构化数据，比如某种配置信息。
