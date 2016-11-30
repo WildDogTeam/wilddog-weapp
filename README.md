@@ -31,7 +31,7 @@ var wilddog = require('wilddog-weapp-all')
 ```js
 var config = {
     syncURL: 'https://<WD-APPID>.wilddogio.com',
-    authDomain: '<WD-APPID.wilddog.com>'
+    authDomain: '<WD-APPID>.wilddog.com'
 }
 wilddog.initializeApp(config)
 ```
