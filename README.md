@@ -31,7 +31,7 @@ var wilddog = require('wilddog-weapp-all')
 ```js
 var config = {
     syncURL: 'https://<WD-APPID>.wilddogio.com',
-    authDomain: '<WD-APPID.wilddog.com>'
+    authDomain: '<WD-APPID>.wilddog.com'
 }
 wilddog.initializeApp(config)
 ```
@@ -39,7 +39,7 @@ wilddog.initializeApp(config)
 
 
 
-## API
+## API(以下API为野狗sdk在小程序平台独有的API，另外兼容web端的所有其他API)
 
 微信小程序平台与一般的开放平台不同之一是它有默认的用户，所以我们提供了一个可以使用一个api进行auth的方法：
 
