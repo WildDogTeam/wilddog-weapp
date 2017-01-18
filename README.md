@@ -68,7 +68,7 @@ wilddog.auth().signInWeapp().then(function(user){
 })
 
 ```
-#### ref.bindAsArray(page,varName)
+#### ref.bindAsArray(page,varName,callback)
 
 将一个reference或query 与page.data中某个Array绑定，绑定后这个reference指向的数据发生任何变化都将实时同步到绑定到的变量上，从而实时同步到页面。使用bindAsArray 相当于已经监听了 所有 child_* 事件。
 
@@ -76,6 +76,7 @@ bindAsArray 可以很方便列表展示
 
 * page 小程序的page对象
 * varName 与页面绑定的变量名
+* callback 绑定是否成功的回调函数
 
 例子
 
@@ -102,7 +103,13 @@ var app = getApp()
 Page({
     ...
     onLoad: function () {
-        app.todoRef.bindAsArray(this,'todo')
+        app.todoRef.bindAsArray(this,'todo',function(err){
+            if(err != null){
+                // 数据绑定失败，失败原因：err.message;
+            } else {
+                // 数据绑定成功
+            }
+        })
     }
     ...
 })
@@ -153,7 +160,14 @@ var app = getApp()
 Page({
     ...
     onLoad: function () {
-        app.userInfoRef.bindAsObject(this,'userInfo')//userInfoRef 在app中提供，在这个例子中不再重复出现
+        // userInfoRef 在app中提供，在这个例子中不再重复出现
+        app.userInfoRef.bindAsObject(this,'userInfo',function(err){
+            if(err != null){
+                // 数据绑定失败，失败原因：err.message;
+            } else {
+                // 数据绑定成功
+            }
+        })
     }
     ...
 })
