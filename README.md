@@ -91,9 +91,18 @@ App({
     onLaunch:function () {
         wilddog.initializeApp(config)
         this.todoRef = wilddog.sync().ref('todo').orderByPriority().limitToFirst(20)
+    },
+    onHide:function(){
+        this.todoRef.goOffline();
+    },
+    onShow:function(){
+        this.todoRef.goOnline();
     }
 })
 ```
+
+** 注意： **
+小程序 1.3+ 版本 onHide 触发后 ws 会自动断连，必须等到 onShow 触发时才可以重连。在此期间 wilddog 重连机制无效，因此需要用户在 onHide 时手动断连，onShow 时手动连接。 
 
 page (假设是 index)
 
